@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+ font-family: 'Poppins', sans-serif;
+ margin: 0;
+ padding: 0;
+ color: #333;
+ background: #eeeff2;
+}
+
+.container {
+ width: 80%;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+ margin: 0 0 15px;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+/* Navbar */
+.navbar {
+ background: #1c2331;
+ color: #fff;
+ position: fixed;
+ width: 100%;
+ z-index: 1000;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0 20px;
+ box-sizing: border-box;
+}
+
+.navbar .container {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ height: 15vh;
+}
+
+.navbar .brand {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ font-size: 1.5em;
+ font-weight: 900;
+}
+
+.navbar .nav-links {
+ display: flex;
+ list-style: none;
+}
+
+.navbar .nav-links li {
+ margin-left: 20px;
+}
+
+.navbar .nav-links a {
+ color: #fff;
+ font-size: 1em;
+ transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+ color: #17a7a7;
+}
+
+.hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+}
+
+.hamburger .bar {
+ width: 25px;
+ height: 3px;
+ background: #fff;
+ margin: 4px 0;
+ transition: 0.4s;
+}
+
+/* Hero Section */
+.hero {
+ background: url('../public/Assets/USI-faded.jpg') center/cover no-repeat;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ text-align: center;
+}
+
+.hero-overlay {
+ background: rgba(0, 0, 0, 0.6);
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.hero h1 {
+ font-size: 3em;
+ color: #fff;
+}
+
+.hero p {
+ font-size: 1.2em;
+ color: #fff;
+}
+
+.hero .cta-button {
+ background: #17a7a7;
+ color: #fff;
+ padding: 10px 20px;
+ margin: 10px;
+ text-decoration: none;
+ border-radius: 5px;
+ transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+ background: #0b4b56;
+}
+
+/* About Section */
+.about {
+ padding: 100px 0;
+ background: #f9f9f9;
+ text-align: center;
+}
+
+.about h2 {
+ font-size: 2.5em;
+}
+
+.about .about-features {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin-top: 30px;
+}
+
+.about .about-feature {
+ width: 30%;
+ min-width: 250px;
+ margin-bottom: 30px;
+ background: #ebe5e5;
+ padding: 12px;
+ border-radius: 10px;
+ transition: 0.7s;
+}
+
+.about .about-feature:hover {
+ transform: scale(0.9);
+}
+
+.about h3 {
+ color: #0b4b56;
+}
+
+/* Features Section */
+.features {
+ padding: 100px 0;
+ background: #fff;
+ text-align: center;
+}
+
+.features h2 {
+ font-size: 2.5em;
+}
+
+.features .feature-list {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin-top: 30px;
+}
+
+.features .feature {
+ width: 30%;
+ min-width: 250px;
+ margin-bottom: 30px;
+ background-color: #eeeff2;
+ padding: 10px;
+ transition: 0.7s;
+}
+
+.features .feature:hover {
+ transform: scale(1.2);
+}
+
+.features h3 {
+ color: #0b4b56;
+}
+
+/* Testimonials Section */
+.testimonials {
+ padding: 100px 0;
+ background: #f9f9f9;
+ text-align: center;
+}
+
+.testimonials h2 {
+ font-size: 2.5em;
+}
+
+.testimonials .testimonial-list {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin-top: 30px;
+}
+
+.testimonials .testimonial {
+ width: 45%;
+ min-width: 300px;
+ margin-bottom: 30px;
+ background: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ transition: 0.7s;
+}
+
+.testimonials .testimonial:hover {
+ transform: scale(1.2);
+}
+
+/* Call to Action Section */
+.cta {
+ padding: 100px 0;
+ background: #333;
+ color: #fff;
+ text-align: center;
+}
+
+.cta h2 {
+ font-size: 2.5em;
+}
+
+.cta .cta-button {
+ background: #17a7a7;
+ color: #fff;
+ padding: 10px 20px;
+ text-decoration: none;
+ margin: 10px;
+ border-radius: 5px;
+ transition: background 0.3s;
+}
+
+.cta .cta-button:hover {
+ background: #0b4b56;
+}
+
+/* Contact Section */
+.contact {
+ padding: 100px 0;
+ background: #f9f9f9;
+ text-align: center;
+}
+
+.contact h2 {
+ font-size: 2.5em;
+}
+
+.contact form {
+ max-width: 600px;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+
+.contact button {
+ background: #17a7a7;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+ transition: background 0.3s;
+}
+
+.contact button:hover {
+ background: #0b4b56;
+}
+
+/* Footer */
+footer {
+ background: #333;
+ color: #fff;
+ padding: 20px 0;
+ text-align: center;
+}
+
+footer .social-links {
+ margin: 20px 0;
+}
+
+.footer-row {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 50px;
+ padding: 20px;
+}
+
+footer .social-links a {
+ margin: 0 10px;
+}
+
+footer .social-links img {
+ border-radius: 50%;
+ width: 30px;
+ height: 30px;
+ box-shadow: 0 0 6px hsl(189, 100%, 70%);
+ background-color: #fef2f2;
+ color: #0b4b56;
+ transition: 0.2s;
+}
+
+footer .social-links img:hover {
+ transform: rotate(360deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+ .navbar .brand {
+  font-size: medium;
+ }
+
+ .navbar .brand img {
+  width: 50px;
+ }
+
+ .about-feature {
+  width: 45%;
+ }
+}
+
+@media (max-width: 768px) {
+ .navbar .nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #081b2c;
+  padding: 20px 0;
+  box-sizing: border-box;
+ }
+
+ .navbar .nav-links.active {
+  display: flex;
+ }
+
+ .hamburger {
+  display: flex;
+ }
+
+ .features .feature img {
+
+  width: 150px;
+ }
+
+ .footer-links>.container>.footer-row>.b-l {
+  padding: 20px;
+  border-left: 2px solid white;
+ }
+
+ .footer-links>.container>.footer-row>.b-r {
+  padding: 20px;
+  border-right: 2px solid white;
+ }
+
+ .about .about-features,
+ .features .feature-list,
+ .testimonials .testimonial-list {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .about .about-feature,
+ .features .feature,
+ .testimonials .testimonial {
+  width: 80%;
+ }
+
+ footer {
+  width: 100vw;
+ }
+}
+
+@media (max-width: 480px) {
+ .hero h1 {
+  font-size: 2em;
+ }
+
+
+ .features .feature img {
+  width: 100px;
+ }
+
+ .hero p {
+  font-size: 1em;
+ }
+
+ .about h2,
+ .features h2,
+ .testimonials h2,
+ .cta h2,
+ .contact h2 {
+  font-size: 2em;
+ }
+}
